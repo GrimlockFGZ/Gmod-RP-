@@ -574,7 +574,7 @@ TEAM_212E = DarkRP.createJob("212th Enlisted Trooper ", {
 	},
     command = "212e",
     max = 0,
-    salary = 350,
+    salary = 125,
     admin = 0,
     vote = false,
     hasLicense = false,
@@ -878,11 +878,663 @@ TEAM_212AIR = DarkRP.createJob("212th Airborne", {
 })
 
 ------------------------------------------------------------
--- Dooms Unit -test2-
+-- Dooms Unit --
 ------------------------------------------------------------
+TEAM_DUE = DarkRP.createJob("Doom's Unit Enlisted Trooper", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/trooper/trooper.mdl"
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic!
+                    Congratulations on passing the Doom's Unit Tryout!]],
+    weapons = {
+        "at_sw_dc15s_base1",
+        "clone_card_c1",
+        "salute_swep",
+        "keys",
+        "w_sw_dc17ext"
+    },
+    command = "due",
+    max = 0,
+    salary = 125,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+		sortOrder = 1,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(125)
+    end,
+})
+TEAM_DUNCO = DarkRP.createJob("Doom's Unit Non-Commissioned Officer", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/sgt/sgt.mdl"
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic in the rank of Non-Commissioned Officer!
+                    Congratulations on becoming an NCO!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+		"salute_swep",
+		"cross_arms_swep",
+		"cross_arms_infront_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "dunco",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+	sortOrder = 2,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_DUCO = DarkRP.createJob("DU Commissioned Officer", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/officer/officer.mdl"
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic in the rank of Commissioned Officer!
+                    Congratulations on making it this far!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c3",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "duco",
+    max = 0,
+    salary = 175,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+	sortOrder = 3,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(175)
+        ply:SetHealth(175)
+        ply:SetArmor(175)
+    end,
+})
+TEAM_DUVCMDR = DarkRP.createJob("Doom's Unit Vice-Commander", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/officer/officer.mdl"
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic in the rank of Vice-Commander!
+                    You have done your regiment proud, and help lead it alongside your Commander!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c4",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "duvcmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+		sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
+TEAM_DUCMDR = DarkRP.createJob("Doom's Unit Commander", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/officer/officer.mdl"
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic in the rank of Commander!
+                    You have done your regiment proud, and help lead it alongside your Vice-Commander!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c4",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "ducmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+		sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
+TEAM_DUARF = DarkRP.createJob("Doom's Unit ARF", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/sniper/sniper.mdl"
+	},
+    description = [[You are a Doom's Unit ARF Trooper for the Grand Army of the Republic!
+                    Congratulations on becoming an ARF Trooper!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"rw_sw_bino_dark",
+		"w_sw_dc17ext",
+		"keys"
+	},
+    command = "duarf",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+	sortOrder = 5,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_DUSHIELD = DarkRP.createJob("Doom's Unit Shield Trooper", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/lowofficer/lowofficer.mdl"
+	},
+    description = [[You are a Doom's Unit Shield Trooper for the Grand Army of the Republic!
+                    Congratulations on becoming a Shield Trooper!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"w_sw_dc17ext",
+		"keys"
+	},
+    command = "dushield",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+		sortOrder = 6,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_DUFE = DarkRP.createJob("DU Field Engineer", {
+    color = Color(12, 84, 0, 255),
+    model = {
+			"models/doom/lowofficer/lowofficer.mdl"
+	},
+    description = [[You are a Doom's Unit Field Engineer for the Grand Army of the Republic!
+                    Congratulations on becoming a Field Engineer!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"w_sw_dc17ext",
+		"keys"
+	},
+    command = "dufe",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Dooms Unit",
+	sortOrder = 7,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
 
+------------------------------------------------------------
+-- Galactic Marines --
+------------------------------------------------------------
+TEAM_GME = DarkRP.createJob("Galactic Marines Enlisted Trooper", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/trooper/trooper.mdl",
+	},
+    description = [[You are a Galactic Marine Trooper for the Grand Army of the Republic!
+                    Congratulations on passing the Doom's Unit Tryout!]],
+    weapons = {
+        "at_sw_dc15s_base1",
+        "clone_card_c1",
+        "salute_swep",
+        "keys",
+        "w_sw_dc17ext"
+    },
+    command = "gme",
+    max = 0,
+    salary = 125,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 1,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(125)
+    end,
+}) 
+TEAM_GMNCO = DarkRP.createJob("GM Non-Commissioned Officer", {
+    color = Color(102, 0, 80, 255),
+    model = {
+		"models/herm_models/21st/sergeant/sergeant.mdl",
+	},
+    description = [[You are a Doom's Unit Trooper for the Grand Army of the Republic in the rank of Non-Commissioned Officer!
+                    Congratulations on becoming an NCO!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+		"salute_swep",
+		"cross_arms_swep",
+		"cross_arms_infront_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "gmnco",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+		sortOrder = 2,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_GMCO = DarkRP.createJob("Galactic Marines Commissioned Officer", {
+    color = Color(102, 0, 80, 255),
+    model = {
+		"models/herm_models/21st/officer/officer.mdl"
+	},
+    description = [[You are a Galactic Marines Trooper for the Grand Army of the Republic in the rank of Commissioned Officer!
+                    Congratulations on making it this far!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c3",
+		"salute_swep",
+		"cross_arms_infront_swep",
+		"cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "gmco",
+    max = 0,
+    salary = 175,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 3,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(175)
+        ply:SetHealth(175)
+        ply:SetArmor(175)
+    end
+})
+TEAM_GMVCMDR = DarkRP.createJob("Galactic Marines Vice-Commander", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/commander/commander.mdl"
+	},
+    description = [[You are a Galactic Marines Trooper for the Grand Army of the Republic in the rank of Vice-Commander!
+                    You have done your regiment proud, and help lead it alongside your Commander!]],
+    weapons = {
+	    "at_sw_dc15s_base1",
+	    "clone_card_c4",
+	    "salute_swep",
+	    "cross_arms_infront_swep",
+	    "cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "gmvcmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
+TEAM_GMCMDR = DarkRP.createJob("Galactic Marines Commander", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/commander/commander.mdl"
+	},
+    description = [[You are a Galactic Marines Trooper for the Grand Army of the Republic in the rank of Commander!
+                    You have done your regiment proud, and help lead it alongside your Vice-Commander!]],
+    weapons = {
+	    "at_sw_dc15s_base1",
+	    "clone_card_c4",
+	    "salute_swep",
+	    "cross_arms_infront_swep",
+	    "cross_arms_swep",
+		"rw_sw_bino_dark",
+		"keys",
+		"w_sw_dc17ext"
+	},
+    command = "gmcmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 5,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
+TEAM_GMF = DarkRP.createJob("Galactic Marines Flametrooper", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/flametrooper/flametrooper.mdl"
+	},
+    description = [[You are a Galactic Marines Flametrooper for the Grand Army of the Republic!
+                    Congratulations on becoming a Flametrooper!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"clone_card_c2",
+	    "salute_swep",
+	    "cross_arms_infront_swep",
+	    "cross_arms_swep",
+	    "keys",
+	    "w_sw_dc17ext"
+	},
+    command = "gmf",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 6,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_GMH = DarkRP.createJob("Galactic Marines Heavy Trooper", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/heavy/heavy.mdl"
+			},
+    description = [[You are a Galactic Marines Heavy Trooper for the Grand Army of the Republic!
+                    Congratulations on becoming a Heavy Trooper!]],
+    weapons = {
+		"at_sw_dc15s_base1",
+		"rw_sw_dc17ext",
+		"salute_swep",
+		"cross_arms_swep",
+		"cross_arms_infront_swep",
+		"rw_sw_z6",
+		"keys", 
+		"clone_card_c2"
+	},
+    command = "gmh",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+		sortOrder = 7,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_GMM = DarkRP.createJob("Galactic Marines Medic", {
+    color = Color(102, 0, 80, 255),
+    model = {
+			"models/herm_models/21st/medic/medic.mdl"
+	},
+    description = [[You are a Galactic Marines Medic for the Grand Army of the Republic!
+                    Congratulations on becoming a Medic!]],
+    weapons = {
+		"rw_sw_dc17ext",
+		"keys", "clone_card_c2",
+		"weapon_bactainjector", 
+		"weapon_bactanade",
+		"at_sw_dc15s_base1"
+	},
+    command = "gmm",
+    max = 4,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Galactic Marines",
+	sortOrder = 8,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
 
-
+------------------------------------------------------------
+-- Clone Guards --
+------------------------------------------------------------
+TEAM_CGE = DarkRP.createJob("Clone Guard Enlisted", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/herm/cg/trooper/trooper.mdl"
+    },
+    description = [[You are a Clone Guard Trooper for the Grand Army of the Republic!
+                    Congratulations on passing the Clone Guard Tryout!]],
+    weapons = {
+        "rw_sw_stun_dc15s",
+        "weapon_cuff_elastic",
+        "rw_sw_dc15s",
+        "keys",
+        "clone_card_c1"
+    },
+    command = "cge",
+    max = 0,
+    salary = 125,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Clone Guard",
+    sortOrder = 1,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(125)
+    end,
+})
+TEAM_CGNCO = DarkRP.createJob("Clone Guard Non-Commissioned Officer", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/herm/cg/sergeant/sergeant.mdl"
+    },
+    description = [[You are a Clone Guard Trooper for the Grand Army of the Republic in the rank of Non-Commissioned Officer!
+                    Congratulations on becoming an NCO!]],
+    weapons = {
+        "rw_sw_stun_dc15s",
+        "weapon_cuff_elastic",
+        "rw_sw_dc15s",
+        "keys",
+        "clone_card_c2"
+    },
+    command = "cgnco",
+    max = 11,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Clone Guard",
+    sortOrder = 2,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end,
+})
+TEAM_CGCO = DarkRP.createJob("Clone Guard Commissioned Officer", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/herm/cg/officer/officer.mdl"
+    },
+    description = [[You are a Clone Guard Trooper for the Grand Army of the Republic in the rank of Commissioned Officer!
+                    Congratulations on making it this far!]],
+    weapons = {
+        "rw_sw_stun_dc15s",
+        "weapon_cuff_elastic",
+        "rw_sw_dc15s",
+        "keys",
+        "clone_card_c3"
+    },
+    command = "cgco",
+    max = 6,
+    salary = 175,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Clone Guard",
+    sortOrder = 3,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(175)
+        ply:SetHealth(175)
+        ply:SetArmor(175)
+    end,
+})
+TEAM_CGVCMDR = DarkRP.createJob("Clone Guard Vice-Commander", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/herm/cg/cmd_thorn/cmd_thorn.mdl"
+    },
+    description = [[You are a Clone Guard Trooper for the Grand Army of the Republic in the rank of Vice-Commander!
+                    You have done your regiment proud, and help lead it alongside your Commander!]],
+    weapons = {
+        "rw_sw_dual_dc17ext",
+        "rw_sw_stun_dc15s",
+        "weapon_cuff_elastic",
+        "rw_sw_dc15s",
+        "keys",
+        "clone_card_c4"
+    },
+    command = "cgvcmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Clone Guard",
+    sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
+TEAM_CGCMDR = DarkRP.createJob("Clone Guard Commander", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/herm/cg/cmd_thorn/cmd_thorn.mdl"
+    },
+    description = [[You are a Clone Guard Trooper for the Grand Army of the Republic in the rank of Commander!
+                    You have done your regiment proud, and help lead it alongside your Vice-Commander!]],
+    weapons = {
+        "rw_sw_dual_dc17ext",
+        "rw_sw_stun_dc15s",
+        "weapon_cuff_elastic",
+        "rw_sw_dc15s",
+        "keys",
+        "clone_card_c4"
+    },
+    command = "cgcmdr",
+    max = 1,
+    salary = 225,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Clone Guard",
+    sortOrder = 5,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(225)
+        ply:SetHealth(225)
+        ply:SetArmor(225)
+    end,
+})
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
