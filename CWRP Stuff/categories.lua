@@ -21,7 +21,7 @@ DarkRP.createCategory{
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
 DarkRP.createCategory{
-    name = "Stormtrooper Corps", -- The name of the category.
+    name = "Clone Trooper Corps", -- The name of the category.
     categorises = "jobs", -- What it categorises."jobs", "entities", "shipments", "weapons", "vehicles", "ammo".
     startExpanded = true, -- Whether the category is expanded when you open the F4 menu.
     color = Color(255, 255, 255), -- The color of the category header.
@@ -69,7 +69,7 @@ DarkRP.createCategory{
     sortOrder = 6,
 }
 DarkRP.createCategory{
-    name = "Imperial High Command", -- The name of the category.
+    name = "Republic High Command", -- The name of the category.
     categorises = "jobs", -- What it categorises. MUST be one of "jobs", "entities", "shipments", "weapons", "vehicles", "ammo".
     startExpanded = true, -- Whether the category is expanded when you open the F4 menu.
     color = Color(33, 42, 18), -- The color of the category header.
@@ -93,7 +93,7 @@ DarkRP.createCategory{
     sortOrder = 9,
 }
 DarkRP.createCategory{
-    name = "Imperial Special Forces", -- The name of the category.
+    name = "Republic Special Forces", -- The name of the category.
     categorises = "jobs", -- What it categorises. MUST be one of "jobs", "entities", "shipments", "weapons", "vehicles", "ammo".
     startExpanded = true, -- Whether the category is expanded when you open the F4 menu.
     color = Color(0, 0, 0), -- The color of the category header.
@@ -101,7 +101,7 @@ DarkRP.createCategory{
     sortOrder = 10,
 }
 DarkRP.createCategory{
-    name = "Imperial Security Bureau", -- The name of the category.
+    name = "Republic Security Force", -- The name of the category.
     categorises = "jobs", -- What it categorises. MUST be one of "jobs", "entities", "shipments", "weapons", "vehicles", "ammo".
     startExpanded = true, -- Whether the category is expanded when you open the F4 menu.
     color = Color(192, 192, 192), -- The color of the category header.
