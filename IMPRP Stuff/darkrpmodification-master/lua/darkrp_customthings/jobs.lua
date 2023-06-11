@@ -35,7 +35,7 @@ TEAM_CADETS = DarkRP.createJob("Imperial Cadet", {
     vote = false,
     hasLicense = false,
     candemote = false,
-    category = "Imperial Cadets"
+    category = "Stormtrooper Corps"
 })
 
 ------------------------------------------------------------
