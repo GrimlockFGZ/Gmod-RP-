@@ -17,7 +17,6 @@ DarkRP.createCategory{
     sortOrder = 100, -- OPTIONAL: With this you can decide where your category is. Low numbers to put it on top, high numbers to put it on the bottom. It's 100 by default.
 }
 
-
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
 DarkRP.createCategory{
