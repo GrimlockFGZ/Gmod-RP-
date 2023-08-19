@@ -3,10 +3,10 @@ Categories
 ---------------------------------------------------------------------------
 The categories of the default F4 menu.
 
-Please read this page for more information:
+For anyone accessing this file, please refer to the DarkRP page for this code and how to create it.
 https://darkrp.miraheze.org/wiki/DarkRP:Categories
 
-In case that page can't be reached, here's an example with explanation:
+Here's an example with explanation, in case you're editing without internet access, e.g. downloaded the files to edit later:
 
 DarkRP.createCategory{
     name = "Citizens", -- The name of the category.
